@@ -46,7 +46,7 @@ jobs:
           # For Code Scanning purposes, we only need to compile the code. As such, we disable executing our test suite. This can be changed according to your needs      
           # command: 'mvn clean install -DskipTests=true -s settings/settings.xml'   
       - run: 
-          Optional step if you experience errors where CodeQL runner runs out of memory resources
+          # Optional step if you experience errors where CodeQL runner runs out of memory resources
           name: Tune malloc fragmentation threshold
           command: 'export MALLOC_MMAP_THRESHOLD_=131072'
       - run:
